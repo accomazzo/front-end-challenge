@@ -1,13 +1,54 @@
 body{font-family: "Arial"}
-a{text-decoration: none;}
-
-.product-container{width:300px; border:1px solid #aaa; margin:10px; display:inline-block;}
+a{text-decoration: none; color: #0096ff;}
+a:link, a:visited, a:hover, a:active {text-decoration: none !important;;}
+#container {margin:10px;style: "display:none;";}
+.product-container{ border: 1px solid #aaa; }
 .product-container img{width:100%; height:auto;}
-.row{width:946px;}
-
-.col1{float:left;}
-.col2{margin:10px auto;}
-.col3{float:right;}
-
-.title{font-size:20px;}
+.col-sm-4 {padding:15px;}
+#title-header {font-size: 36px; text-align: center; }
+#tagline-header{font-size:18px; text-align: center; }
+.title{font-size: 16px; text-align: center;  }
+.tagline{font-size: 13px;text-align:center;}
 .description{padding:10px;}
+.info {display: none;}
+.info-hover {
+    display: block;
+    position: absolute;
+    bottom: 16px;
+    right: 16px;
+    color: #000 !important;
+    border: 1px solid #aaa;
+    font-size: 11px;
+    font-weight: bold;
+    background-color: #eaeaea;
+    opacity: .8;
+    padding: 25px 20px 20px 10px;
+    text-shadow: 1px #111111;
+    line-height: 1.3;
+}
+.img-hover {
+    /*using filter we can turn the image grey on hover for an interesting effect*/
+    -webkit-filter: grayscale(1);
+    filter: grayscale(1);
+    opacity: .5;
+}
+.remove {
+    position: absolute; 
+    top: 20px;
+    right: 20px;
+    z-index: 9;
+    opacity: .5;
+}
+.product-container > .remove {
+    font-size: 8px;
+    padding: 4px 8px;
+}
+.loading-spinner {
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	z-index: 9999;
+	background: url('http://accomazzo.net/img/loading_spinner.gif') center no-repeat #fff;
+}

@@ -1,9 +1,14 @@
-<div class="product-container {custom_class}">
-  <a href="{url}">
-    <img src="{image}">
-    <div class="description">
-      <div class="title">{title}</div>
-      <div class="tagline">{tagline}</div>
-    </div>
-  </a>
-</div>
+<div class="col-sm-4">
+                    <div class="product-container {custom_class}">
+                        <a class=" remove btn btn-default" role="button">X</a>
+                        <a href="{url}">
+                            <img src="{image}" class="img-responsive" >
+                            <div class="description">
+                                <div class="title">{title}</div>
+                                <div class="tagline">{tagline}</div>
+                                <!--using info (description) as modal keeps divs in logical order-->
+                                <div class="info">{info}</div>
+                            </div>
+                        </a>
+                    </div>
+                </div>

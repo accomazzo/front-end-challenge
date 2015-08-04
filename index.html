@@ -1,18 +1,32 @@
 <html>
   <head>
     <title>Touch of Modern</title>
-    <script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
     
+    <link rel="shortcut icon" href="//s3.amazonaws.com/touchofmodern-production/images/icons/favicon-touchofmodern.ico?v=2" />
     <link href="style.css" media="screen" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
   </head>
 <body>
-  
-<div id="body container">
-  <h1 class="title">Welcome to Touch of Modern</h1>
-  <div class="tagline">Live beyond expectations</div>
-  <div id="content"></div>
+<div class="loading-spinner"></div>  
+<div id="container">
+  <h1 id="title-header">Welcome to Touch of Modern</h1>
+  <div id="tagline-header">Live beyond expectations</div>
+    <div id="content">
+        <div class="row">
+        <!--Insert Content Here-->
+        </div>          
+    </div>
 </div>
 
+<script src="//code.jquery.com/jquery-1.11.2.min.js"></script>    
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+<script type="text/javascript">
+    $(window).load(function() {
+	$(".loading-spinner").fadeOut("slow");;
+    }); 
+</script>
 <script src="script.js"></script>
+
 </body>
 </html>
